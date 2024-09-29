@@ -1,0 +1,273 @@
+<html>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<!-- Site Properties -->
+	<title>Semantic UI</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.js"></script>
+</head>
+<body style="background:  #ccd9ff">
+	<div class="ui horizontal segments">
+		<div class="two wide column">
+			<div class="ui left fixed vertical menu" style="background: #0033CC;">
+					<div class="item">
+						<img class="ui mini image" src="images\menu.png">
+					</div>
+					<div class="ui accordion" style="background: #00CCFF;">
+						<div class="title">
+							<a class="item" style="background: #00CCFF;">Статьи<i class="dropdown icon"></i></a>
+						</div>
+						<div class="content">
+							<a class="item active">Принцип работы браузера</a>
+							<a class="item" href="05.html">Браузеры</a>
+							<a class="item" href="06.html">Браузеры для Web-разработки</a>
+							<a class="item" href="07.html">Разработчикам и дизайнерам</a>
+							<a class="item" href="08.html">SEO-плагины</a>
+						</div>
+					</div>
+					<div class="ui accordion" style="background: #00CCFF;">
+						<div class="title">
+							<a class="item" style="background: #00CCFF;">Оглавление<i class="dropdown icon"></i></a>
+						</div>
+						<div class="content">
+							<a class="item" style="background: #00CCFF;" href="#target">Принцип работы браузера</a>
+							<a class="item" style="background: #00CCFF;"href="#target_02">Механизм работы браузеров</a>
+						</div>
+					</div>
+			</div>	
+		</div>
+		
+		<div class="ui segment" style="background: #f2f2f2;">
+			<div style="background: #f2f2f2;">
+				<div>
+					<div class="ui stackable container menu" style="background: #00CCFF;">
+						<div class="header item"><p style="visibility: inherit !important;">  Web-разработка  </p></div>
+						<a class="item" href="index.html"><p style="visibility: inherit !important;"> Главная </p></a>
+						<a class="item" href="02.html"><p style="visibility: inherit !important;"> Статьи </p></a>
+						<a class="item " href="03.html"><p style="visibility: inherit !important;"> О сайте </p></a>	
+					</div>
+				</div>
+			</div>
+			
+			<div class="ui justified container Mobile">
+
+			
+				<h2 class="ui center aligned header" id="target">Принцип работы браузера</h2>
+				<div class="ui stackable one column vertically divided grid container">
+					<div class="row">
+						<div class="column">
+							<div class="ui segment">
+								<img class="ui small left floated image" src="images\firefox.png">
+								<p><h3>Самые популярные браузеры на сегодняшний день — это Google Chrome, Opera, Firefox, Safari и Internet Explorer.</h3></p>
+								<img class="ui small right floated image" src="images\opera.png">
+								<p><h3>Chrome и Firefox являются браузерами с открытым исходным кодом. Это означает, что их код находится в публичном доступе, 
+								например, на github.com, и любой желающий может его просмотреть и принять участие в разработке. </h3></p>
+								<p><h3>Преимуществами таких браузеров являются открытость, независимость от крупных компаний и скорость разработки. 
+								Однако последнее может оказаться и недостатком, так как все зависит от команды разработчиков. 
+								В таком случае открытый код программы становится менее стабильным.</h3></p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="column">
+							<h2 class="ui center aligned header" id="target_02">Механизм работы браузеров</h2>
+							<div class="ui segments">			
+								<div class="ui blue segment">
+									<p><h3>Пользователь открывает свой браузер и вводит адрес нужного сайта.</h3></p>
+								</div>
+
+								<div class="ui blue segment">
+									<p><h3>Браузер ищет сервер. Сервер — это программа, без которой не работал бы ни один сайт в интернете. 
+											Браузер ищет сервер по IP-адресу, который уникален для каждого сайта. Сначала он далеко не идёт, а ищет его в кэше роутера, 
+											операционной системе или же в истории подключений, которая хранит информацию об IP-адресе сервера, 
+											если его уже посещали ранее. Если браузер там его не находит, он смотрит в DNS (Domain Name System). 
+											Она представляет собой что-то вроде телефонной книги, которая хранит информацию о том, какое доменное 
+											имя соответствует адресу.</h3></p>
+								</div>
+								
+								<div class="ui blue segment">
+									<p><h3>Браузер пытается установить соединение с сервером. Теперь, когда браузер нашёл нужный IP-адрес, он устанавливает с ним 
+											соединение с помощью специального протокола TCP/IP, который отвечает за передачу данных в интернете. 
+											Для установки соединения используется процесс "рукопожатие" (с англ. handshaking), который проходит в три этапа: 
+											серверу отправляется специальный запрос с номером последовательности и флагом SYN; потом он отправляет ответный 
+											запрос с подтверждением получения SYN — ACK; после этого сервер посылает подтверждение приема — ACK, и соединение 
+											считается установленным.</h3></p>
+								</div>
+
+								<div class="ui blue segment">
+									<p><h3>Браузер отправляет HTTP запрос на сервер. Таким образом он запрашивает информацию для того, чтобы отобразить страницу. 
+											Эта коммуникация осуществляется с помощью GET-запроса и POST-запроса.</h3></p>
+								</div>	
+								
+								<div class="ui blue segment">
+									<p><h3>Сервер обрабатывает запрос и отправляет ответ браузеру. Запрос обрабатывается следующими веб-серверами: Apache, 
+											nginx, lighttpd. После этого сервер отправляет браузеру ответ с данными о файлах cookie, способах кэширования и, 
+											конечно же, контентом для отображения страницы.</h3></p>
+								</div>
+
+								<div class="ui blue segment">
+									<p><h3>Браузер обрабатывает ответ и отображает запрашиваемый контент. Это называется рендерингом. Пока он происходит, 
+											браузер и сервер обмениваются данными. По завершении, пользователь видит загруженную страницу.</h3></p>
+								</div>
+								
+							</div>			
+						</div>
+						
+						<div class="column">
+							<div class="ui blue segment">
+								<div class="ui blue left aligned header"><i class="chevron circle down icon"></i>Зажмите кнопку для подсказки</div>
+							</div>
+							<div class="ui five bottom attached buttons">
+								<a class="ui active primary icon button" data-tooltip="Принцип работы браузера">One</a>
+								<a class="ui primary icon button " data-tooltip="Браузеры" href="05.html">Two</a>
+								<a class="ui primary icon button" data-tooltip="Браузеры для Web-разработки" href="06.html">Three</a>
+								<a class="ui primary icon button" data-tooltip="Разработчикам и дизайнерам" href="07.html">Four</a>
+								<a class="ui primary icon button" data-tooltip="SEO-плагины" href="08.html">Five</a>
+							</div>
+						
+							<div class="ui bottom attached" style="background: #00CCFF">
+								<div class="ui stackable container">
+									<div class="ui left aligned header"><p> Все права защищены </p></div>
+								</div>
+							</div>
+						</div>	
+						
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		
+		<button class="ui blue button"id="toggle-menu">Меню</button>
+		
+		<div class="dock-menu" id="dock-menu">
+			<div class="ui vertical menu" style="top: 0; left: 0;  height: 100%; background-color: #333; color: #fff; background: #0033CC; z-index: 9995;">
+				<div class="item">
+					<img class="ui mini image" src="images\menu.png">
+				</div>
+				<div class="ui accordion" style="background: #00CCFF;">
+					<div class="title">
+						<a class="item" style="background: #00CCFF;"><i class="dropdown icon"></i>Статьи</a>
+					</div>
+					<div class="content">
+						<a class="item active">Принцип работы браузера</a>
+						<a class="item" href="05.html">Браузеры</a>
+						<a class="item" href="06.html">Браузеры для Web-разработки</a>
+						<a class="item" href="07.html">Разработчикам и дизайнерам</a>
+						<a class="item" href="08.html">SEO-плагины</a>
+					</div>
+				</div>
+				
+				<div class="ui accordion" style="background: #00CCFF;">
+					<div class="title">
+						<a class="item" style="background: #00CCFF;">Оглавление<i class="dropdown icon"></i></a>
+					</div>
+					<div class="content">
+						<a class="item" style="background: #00CCFF;" href="#target">Принцип работы браузера</a>
+						<a class="item" style="background: #00CCFF;"href="#target_02">Механизм работы браузеров</a>
+					</div>
+				</div>	
+			
+			</div>
+		</div>	
+		
+	</div>
+	
+</body>
+	<style>
+		.ui.blue.button {
+		  position: fixed;
+		  top: 20px;
+		  left: 20px;
+		  border: none;
+		}
+
+		.dock-menu {
+		  position: fixed;
+		  top: 0;
+		  left: -300px;
+		  width: 150px;
+		  height: 100%;
+		  transition: left 0.3s ease-in-out;
+		}
+		.dock-menu.show {
+		  left: 0;
+		}
+	</style>
+	
+	<script>
+		const toggleMenuButton = document.getElementById('toggle-menu');
+		const dockMenu = document.getElementById('dock-menu');
+
+		let isMenuOpen = false;
+
+		toggleMenuButton.addEventListener('click', () => {
+		  dockMenu.classList.toggle('show');
+		  isMenuOpen = dockMenu.classList.contains('show');
+		});
+
+		function trackFloatingButton() {
+		  const button = document.querySelector('.ui.blue.button');
+		  button.style.left = '20px';
+		  requestAnimationFrame(trackFloatingButton);
+		}
+
+		trackFloatingButton();
+
+		document.addEventListener('click', (event) => {
+		  if (event.target !== toggleMenuButton && !dockMenu.contains(event.target) && isMenuOpen) {
+			dockMenu.classList.remove('show');
+			isMenuOpen = false;
+		  }
+		});
+	</script>
+	
+	<script>
+		const minPageWidth = 1570;
+
+
+		const elementToHide = document.querySelector('.ui.left.fixed.vertical.menu');
+
+
+		function toggleElementVisibility() {
+		  if (window.innerWidth < minPageWidth) {
+			elementToHide.style.display = 'none';
+		  } else {
+			elementToHide.style.display = 'block';
+		  }
+		}
+		toggleElementVisibility();
+		window.addEventListener('resize', toggleElementVisibility);
+		
+	</script>	
+
+	<style>
+	  .last.container {
+		margin-bottom: 300px !important;
+	  }
+	  h1.ui.center.header {
+		margin-top: 3em;
+	  }
+	  h2.ui.center.header {
+		margin: 4em 0em 2em;
+	  }
+	  h3.ui.center.header {
+		margin-top: 2em;
+		padding: 2em 0em;
+	  }
+	</style>
+
+	<script>
+		$('.ui.accordion')
+		.accordion()
+		;
+	</script>
+
+</html>
