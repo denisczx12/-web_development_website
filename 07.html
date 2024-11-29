@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<!-- Standard Meta -->
 	<meta charset="utf-8">
@@ -8,19 +9,55 @@
 	<!-- Site Properties -->
 	<title>Web-разработка- Semantic UI</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.css">
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.js"></script>
 
-	
+	<style>
+	    body {
+			background: #ccd9ff;
+		}
+		.ui.blue.button {
+		  position: fixed;
+		  top: 20px;
+		  left: 20px;
+		  border: none;
+		}
+
+		.dock-menu {
+		  position: fixed;
+		  top: 0;
+		  left: -300px;
+		  width: 150px;
+		  height: 100%;
+		  z-index: 100;
+		  transition: left 0.3s ease-in-out;
+		}
+		.dock-menu.show {
+		  left: 0;
+		}
+		
+		.last.container {
+			margin-bottom: 300px !important;
+		}
+		h1.ui.center.header {
+			margin-top: 3em;
+		}
+		h2.ui.center.header {
+			margin: 4em 0em 2em;
+		}
+		h3.ui.center.header {
+			margin-top: 2em;
+			padding: 2em 0em;
+		}
+	</style>
 
 </head>
-<body style="background:  #ccd9ff">
+<body>
 	<div class="ui horizontal segments">
 		<div class="two wide column">
 			<div class="ui left fixed vertical menu" style="background: #3185ce; z-index: 9999;">
 					<div class="item">
-						<img class="ui mini image" src="images\menu.png">
+						<img class="ui mini image" src="images/menu.png" alt="Меню">
 					</div>
 					<div class="ui accordion" style="background: #00CCFF;">
 						<div class="title">
@@ -40,10 +77,10 @@
 						</div>
 						<div class="content">
 							<a class="item" style="background: #00CCFF;" href="#target">Web Developer</a>
-							<a class="item" style="background: #00CCFF;"href="#target_02">Eye Dropper</a>
-							<a class="item" style="background: #00CCFF;"href="#target_03">Site Palette</a>
-							<a class="item" style="background: #00CCFF;"href="#target_04">Google Fonts</a>
-							<a class="item" style="background: #00CCFF;"href="#target_05">Lighthouse</a>
+							<a class="item" style="background: #00CCFF;" href="#target_02">Eye Dropper</a>
+							<a class="item" style="background: #00CCFF;" href="#target_03">Site Palette</a>
+							<a class="item" style="background: #00CCFF;" href="#target_04">Google Fonts</a>
+							<a class="item" style="background: #00CCFF;" href="#target_05">Lighthouse</a>
 						</div>
 					</div>
 			</div>		
@@ -72,48 +109,49 @@
 						<div class="ui segments">
 								<div class="ui segment">
 								<h2 id="target">Web Developer</h2>
-									<img class="ui medium  floated image" src="images\web_developer.png">
-									<img class="ui small right floated image" src="images\unnamed.png">
-									<p><h3>Расширение Web Developer позволяет оснастить браузер панелью, содержащей множество различных инструментов. 
-										С их помощью можно отключить JavaScript, управлять расположением страницы и работать с изображениями.</h3></p>
-									<p><br><br><br></p>
+									<img class="ui medium  floated image" src="images/web_developer.png" alt="Изб1">
+									<img class="ui small right floated image" src="images/unnamed.png" alt="Изб2">
+									<h3>Расширение Web Developer позволяет оснастить браузер панелью, содержащей множество различных инструментов. 
+										С их помощью можно отключить JavaScript, управлять расположением страницы и работать с изображениями.</h3>
+									<br><br><br>
 								</div>
 								<div class="ui blue segment">
 								<h2 id="target_02">Eye Dropper</h2>
-								<img class="ui small left floated image" src="images\thumb.png">
-									<p ><h3>Eye Dropper позволяет быстро узнать нужный цвет на сайте без перехода в консоль разработчика. 
+								<img class="ui small left floated image" src="images/thumb.png" alt="Изб3">
+									<h3>Eye Dropper позволяет быстро узнать нужный цвет на сайте без перехода в консоль разработчика. 
 										Особенность плагина в том, что цвет можно определить не только у конкретных элементов, но и у фотографий. 
-										Например, если на сайте есть фотография с живописным видом, то оттуда можно взять цвет неба, моря и так далее.<h3></p>
-									<p></p>
+										Например, если на сайте есть фотография с живописным видом, то оттуда можно взять цвет неба, моря и так далее.</h3>
+										<br>
 								</div>
 
 								<div class="ui blue segment">
 									<h2 id="target_03">Site Palette</h2>
-									<img class="ui small left floated image" src="images\site_palette.jpg">
-									<p><h3>Еще одно расширение для работы с цветом. Его можно назвать аналогом Eye Dropper, но работает 
+									<img class="ui small left floated image" src="images/site_palette.jpg" alt="Изб4">
+									<h3>Еще одно расширение для работы с цветом. Его можно назвать аналогом Eye Dropper, но работает 
 									Site Palette несколько иначе. Оно позволяет извлечь с сайта используемые цвета и оформить их в виде цветовой палитры. 
 									Дополнительно ко всему плагин поддерживает несколько способов генерирования палитр, позволяет ими делиться, 
-									поддерживает возможность печати палитр и умеет конвертировать их в PDF.</h3></p>
+									поддерживает возможность печати палитр и умеет конвертировать их в PDF.</h3>
+									<br>
 								</div>
 							
 								<div class="ui blue segment">
 									<h2 id="target_04">Google Font Previewer for Chrome</h2>
-									<img class="ui small left floated image" src="images\font_previewer.png">
-									<p><h3>Расширение для тех, кто любит «поиграть со шрифтами» – позволяет экспериментировать со всем спектром шрифтов из библиотеки 
+									<img class="ui small left floated image" src="images/font_previewer.png" alt="Изб5">
+									<h3>Расширение для тех, кто любит «поиграть со шрифтами» – позволяет экспериментировать со всем спектром шрифтов из библиотеки 
 										Google Fonts, не внося изменений в код страницы. Можно менять не только сам шрифт, но и его размер, стиль написания и так далее. 
-										Пригодится для того, чтобы проверить, как выглядит шрифт, перед тем, как вносить изменения в код страницы.</h3></p>
-										<p><br><br></p>
+										Пригодится для того, чтобы проверить, как выглядит шрифт, перед тем, как вносить изменения в код страницы.</h3>
+										<br><br>
 								</div>
 
 								<div class="ui blue segment">
 									<h2 id="target_05">Lighthouse</h2>
-									<img class="ui small left floated image" src="images\lighthouse_logo.png">
-									<p><h3>Lighthouse – это инструмент для повышения производительности, качества и корректности страниц сайта. 
+									<img class="ui small left floated image" src="images/lighthouse_logo.png" alt="Изб6">
+									<h3>Lighthouse – это инструмент для повышения производительности, качества и корректности страниц сайта. 
 										Lighthouse запускает множество тестов на странице, а затем создает отчет о том, насколько хорошо она работает.
 										Проверка включает в себя проверку производительности, безопсаности сайта, в данном случии он проверяет https и есть ли на 
 										сайте устаревшие API, SEO оптимизации и многое другое.
-										Благодаря этому можно выявить серьезные ошибки, определить скорость загрузки страницы и понять, как ее улучшить.</h3></p>
-									<p><br></p>
+										Благодаря этому можно выявить серьезные ошибки, определить скорость загрузки страницы и понять, как ее улучшить.</h3>
+									<br>
 								</div>	
 							
 							
@@ -140,7 +178,7 @@
 								<a class="ui primary icon button" data-tooltip="SEO-плагины" href="08.html">Five</a>
 							</div>
 					
-							<div class="ui bottom attached" style="background: #00CCFF">
+							<div class="ui   footer segment" style="background: #00CCFF">
 								<div class="ui stackable container">
 									<div class="ui left aligned header"><p> Все права защищены </p></div>
 								</div>
@@ -150,12 +188,12 @@
 
 				</div>
 				
-				<button class="ui blue button"id="toggle-menu">Меню</button>
+				<button class="ui blue button" id="toggle-menu">Меню</button>
 
 				<div class="dock-menu" id="dock-menu">
 					<div class="ui vertical menu" style="top: 0; left: 0;  height: 100%; background-color: #3185ce; color: #fff; background: #3185ce;">
 						<div class="item">
-							<img class="ui mini image" src="images\menu.png">
+							<img class="ui mini image" src="images/menu.png" alt="Изб7">
 						</div>
 						<div class="ui accordion" style="background: #00CCFF;">
 							<div class="title">
@@ -176,10 +214,10 @@
 							</div>
 							<div class="content">
 								<a class="item" style="background: #00CCFF;" href="#target">Web Developer</a>
-								<a class="item" style="background: #00CCFF;"href="#target_02">Eye Dropper</a>
-								<a class="item" style="background: #00CCFF;"href="#target_03">Site Palette</a>
-								<a class="item" style="background: #00CCFF;"href="#target_04">Google Fonts</a>
-								<a class="item" style="background: #00CCFF;"href="#target_05">Lighthouse</a>
+								<a class="item" style="background: #00CCFF;" href="#target_02">Eye Dropper</a>
+								<a class="item" style="background: #00CCFF;" href="#target_03">Site Palette</a>
+								<a class="item" style="background: #00CCFF;" href="#target_04">Google Fonts</a>
+								<a class="item" style="background: #00CCFF;" href="#target_05">Lighthouse</a>
 							</div>
 						</div>	
 					
@@ -189,30 +227,8 @@
 			
 		</div>
 	</div>
-</body>
-	<style>
-		.ui.blue.button {
-		  position: fixed;
-		  top: 20px;
-		  left: 20px;
-		  border: none;
-		}
-
-		.dock-menu {
-		  position: fixed;
-		  top: 0;
-		  left: -300px;
-		  width: 150px;
-		  height: 100%;
-		  z-index: 100;
-		  transition: left 0.3s ease-in-out;
-		}
-		.dock-menu.show {
-		  left: 0;
-		}
-	</style>
 	
-	<script>
+		<script>
 		const toggleMenuButton = document.getElementById('toggle-menu');
 		const dockMenu = document.getElementById('dock-menu');
 
@@ -258,25 +274,11 @@
 		
 	</script>	
 
-	<style>
-	  .last.container {
-		margin-bottom: 300px !important;
-	  }
-	  h1.ui.center.header {
-		margin-top: 3em;
-	  }
-	  h2.ui.center.header {
-		margin: 4em 0em 2em;
-	  }
-	  h3.ui.center.header {
-		margin-top: 2em;
-		padding: 2em 0em;
-	  }
-	</style>
-
 	<script>
 		$('.ui.accordion')
 		.accordion()
 		;
 	</script>
+	
+</body>
 </html>

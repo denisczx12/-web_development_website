@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<!-- Standard Meta -->
 	<meta charset="utf-8">
@@ -8,16 +9,55 @@
 	<!-- Site Properties -->
 	<title>Web-разработка- Semantic UI</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.css">
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.js"></script>
+	
+	<style>
+	    body {
+			background: #ccd9ff;
+		}
+		.ui.blue.button {
+		  position: fixed;
+		  top: 20px;
+		  left: 20px;
+		  border: none;
+		}
+
+		.dock-menu {
+		  position: fixed;
+		  top: 0;
+		  left: -300px;
+		  width: 150px;
+		  height: 100%;
+		  z-index: 100;
+		  transition: left 0.3s ease-in-out;
+		}
+		.dock-menu.show {
+		  left: 0;
+		}
+		
+		.last.container {
+			margin-bottom: 300px !important;
+		}
+		h1.ui.center.header {
+			margin-top: 3em;
+		}
+		h2.ui.center.header {
+			margin: 4em 0em 2em;
+		}
+		h3.ui.center.header {
+			margin-top: 2em;
+			padding: 2em 0em;
+		}
+	</style>
+	
 </head>
-<body style="background:  #ccd9ff">
+<body>
 	<div class="ui horizontal segments">
 		<div class="two wide column">
 			<div class="ui left fixed vertical menu" style="background: #3185ce;">
 					<div class="item">
-						<img class="ui mini image" src="images\menu.png">
+						<img class="ui mini image" src="images/menu.png" alt="Меню">
 					</div>
 					<div class="ui accordion" style="background: #00CCFF; z-index: 9999;">
 						<div class="title">
@@ -37,10 +77,10 @@
 						</div>
 						<div class="content">
 							<a class="item" style="background: #00CCFF;" href="#target">Internet Explorer (IE)</a>
-							<a class="item" style="background: #00CCFF;"href="#target_02">Google Chrome</a>
+							<a class="item" style="background: #00CCFF;" href="#target_02">Google Chrome</a>
 							<a class="item" style="background: #00CCFF;" href="#target_03">Mozilla Firefox</a>
-							<a class="item" style="background: #00CCFF;"href="#target_04">Opera</a>
-							<a class="item" style="background: #00CCFF;"href="#target_05">Safari</a>
+							<a class="item" style="background: #00CCFF;" href="#target_04">Opera</a>
+							<a class="item" style="background: #00CCFF;" href="#target_05">Safari</a>
 						</div>
 					</div>
 			</div>	
@@ -67,34 +107,34 @@
 						<div class="column">
 						<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\internet_explorer.png">
-									<p><h3>Несмотря на то,что Google Chrome — это самый скачиваемый браузер в мире, мы рассмотрим IE первым, 
+									<img class="ui small left floated image" src="images/internet_explorer.png" alt="Изб1">
+									<h3>Несмотря на то,что Google Chrome — это самый скачиваемый браузер в мире, мы рассмотрим IE первым, 
 										поскольку он встроен в операционную систему Windows и используется всеми хотя бы для того, чтобы скачать другой браузер.
-										Он был создан разработчиками Microsoft для операционной системы Windows в 1995 году.	</h3></p>
-									<p><h3> </h3></p>
+										Он был создан разработчиками Microsoft для операционной системы Windows в 1995 году.	</h3><br>
+										
 								</div>
 								<div class="ui blue segment">
-									<p><h3>Установлен по умолчанию;</h3></p>
+									<h3>Установлен по умолчанию;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Невысокое потребление оперативной памяти.</h3></p>
+									<h3>Невысокое потребление оперативной памяти.</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Устаревший интерфейс;</h3></p>
+									<h3>Устаревший интерфейс;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Низкая скорость работы;</h3></p>
+									<h3>Низкая скорость работы;</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Не поддерживает плагины;</h3></p>
+									<h3>Не поддерживает плагины;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Не поддерживает современные стандарты и технологии.</h3></p>
+									<h3>Не поддерживает современные стандарты и технологии.</h3>
 								</div>								
 							</div>
 						</div>
@@ -105,46 +145,46 @@
 						<h2 class="ui center aligned header" id="target_02">Google Chrome</h2>
 							<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\google.png">
-									<p><h3>Самый используемый браузер в мире, разработанный Google. Стабильная версия увидела свет в декабре 2008 года. 
-									Браузер работает на движке Blink, который является ответвлением от WebKit.Относится к браузерам с открытым исходным кодом.</h3></p>
-									<p><h3><br></h3></p>
+									<img class="ui small left floated image" src="images/google.png" alt="Изб1">
+									<h3>Самый используемый браузер в мире, разработанный Google. Стабильная версия увидела свет в декабре 2008 года. 
+									Браузер работает на движке Blink, который является ответвлением от WebKit.Относится к браузерам с открытым исходным кодом.</h3>
+									<br><br>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Высокая скорость загрузки страниц благодаря предварительной загрузке;</h3></p>
+									<h3>Высокая скорость загрузки страниц благодаря предварительной загрузке;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Высокий уровень безопасности благодаря встроенной защите от вредоносных программ и фишинга;</h3></p>
+									<h3>Высокий уровень безопасности благодаря встроенной защите от вредоносных программ и фишинга;</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Собственный встроенный диспетчер задач позволяет закрыть только вкладку, которая тормозит или не загружается, 
-									и перейти к другой, не перезагружая браузер;</h3></p>
+									<h3>Собственный встроенный диспетчер задач позволяет закрыть только вкладку, которая тормозит или не загружается, 
+									и перейти к другой, не перезагружая браузер;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Синхронизация паролей и закладок в браузере с сервером Google, что позволяет легко получить доступ к сайтам с других 
-									устройств или посредством переустановки системы, ведь достаточно войти в вашу учетную запись Google и все восстановится;</h3></p>
+									<h3>Синхронизация паролей и закладок в браузере с сервером Google, что позволяет легко получить доступ к сайтам с других 
+									устройств или посредством переустановки системы, ведь достаточно войти в вашу учетную запись Google и все восстановится;</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Большое количество бесплатных расширений;</h3></p>
+									<h3>Большое количество бесплатных расширений;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Удобнный и понятный интерфейс;</h3></p>
+									<h3>Удобнный и понятный интерфейс;</h3>
 								</div>
 
 								<div class="ui red segment">
-									<p><h3>Высокое потребление оперативной памяти (минимум 2 Гб);</h3></p>
+									<h3>Высокое потребление оперативной памяти (минимум 2 Гб);</h3>
 								</div>
 								<div class="ui red segment">
-									<p><h3>Большой расход батареи, исходя из потребления памяти;</h3></p>
+									<h3>Большой расход батареи, исходя из потребления памяти;</h3>
 								</div>	
 								<div class="ui red segment">
-									<p><h3>Сбор данных о пользователях ввиду того, что проект — коммерческий;</h3></p>
+									<h3>Сбор данных о пользователях ввиду того, что проект — коммерческий;</h3>
 								</div>	
 									
 							</div>
@@ -156,44 +196,44 @@
 						<h2 class="ui center aligned header" id="target_03">Mozilla Firefox</h2>
 							<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\firefox.png">
-									<p><h3>Этот браузер с открытым исходным кодом был создан в 2004 году компанией Mozilla Corporation. 
-									Firefox использует собственный движок Gecko.</h3></p>
-									<p><h3><br><br></h3></p>
+									<img class="ui small left floated image" src="images/firefox.png" alt="Изб2">
+									<h3>Этот браузер с открытым исходным кодом был создан в 2004 году компанией Mozilla Corporation. 
+									Firefox использует собственный движок Gecko.</h3>
+									<br><br><br>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Один из самых безопасных браузеров — предупреждает пользователя перед посещением мошеннических, фишинговых сайтов, содержащих вирусы;</h3></p>
+									<h3>Один из самых безопасных браузеров — предупреждает пользователя перед посещением мошеннических, фишинговых сайтов, содержащих вирусы;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Все скачиваемые файлы проходят проверку антивирусом;</h3></p>
+									<h3>Все скачиваемые файлы проходят проверку антивирусом;</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Наличие мастер-пароля, что позволяет безопасно использовать автозаполнение;</h3></p>
+									<h3>Наличие мастер-пароля, что позволяет безопасно использовать автозаполнение;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Большое количество плагинов и расширений;</h3></p>
+									<h3>Большое количество плагинов и расширений;</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Невысокое потребление оперативной памяти;</h3></p>
+									<h3>Невысокое потребление оперативной памяти;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Возможность синхронизировать настройки на разных девайсах;</h3></p>
+									<h3>Возможность синхронизировать настройки на разных девайсах;</h3>
 								</div>
 
 								<div class="ui red segment">
-									<p><h3>Потребляет много оперативной памяти при большом количестве вкладок и на слабых компьютерах;</h3></p>
+									<h3>Потребляет много оперативной памяти при большом количестве вкладок и на слабых компьютерах;</h3>
 								</div>
 								<div class="ui red segment">
-									<p><h3>После обновления версии браузера расширения придется устанавливать заново;</h3></p>
+									<h3>После обновления версии браузера расширения придется устанавливать заново;</h3>
 								</div>	
 								<div class="ui red segment">
-									<p><h3>Нет возможности отключить картинки как в других браузерах.</h3></p>
+									<h3>Нет возможности отключить картинки как в других браузерах.</h3>
 								</div>	
 									
 							</div>
@@ -205,43 +245,43 @@
 						<h2 class="ui center aligned header" id="target_04">Opera</h2>
 							<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\opera_01.png">
-									<p><h3>Этот браузер был создан компанией Opera Software в 1994 году, для его работы используется движок Blink.</h3></p>
-									<p><h3><br><br></h3></p>
+									<img class="ui small left floated image" src="images/opera_01.png" alt="Изб4">
+									<h3>Этот браузер был создан компанией Opera Software в 1994 году, для его работы используется движок Blink.</h3>
+									<br><br><br>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Режим Turbo позволяет быстро загружать страницы при медленном интернет-соединении посредством их сжатия;</h3></p>
+									<h3>Режим Turbo позволяет быстро загружать страницы при медленном интернет-соединении посредством их сжатия;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Встроенный блокировщик рекламы;</h3></p>
+									<h3>Встроенный блокировщик рекламы;</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Встроенный VPN, который шифрует IP-адрес, что позволяет посещать заблокированные ресурсы;</h3></p>
+									<h3>Встроенный VPN, который шифрует IP-адрес, что позволяет посещать заблокированные ресурсы;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Встроенные мессенджеры на боковой панели;</h3></p>
+									<h3>Встроенные мессенджеры на боковой панели;</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Низкий расход батареи и экономия трафика;</h3></p>
+									<h3>Низкий расход батареи и экономия трафика;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Встроенный инструмент для скриншотов;</h3></p>
+									<h3>Встроенный инструмент для скриншотов;</h3>
 								</div>
 
 								<div class="ui red segment">
-									<p><h3>Медленно работает на устаревших компьютерах с маленькой оперативной памятью;</h3></p>
+									<h3>Медленно работает на устаревших компьютерах с маленькой оперативной памятью;</h3>
 								</div>
 								<div class="ui red segment">
-									<p><h3>Некорректное отображение скриптов, особенно при работе с WML;</h3></p>
+									<h3>Некорректное отображение скриптов, особенно при работе с WML;</h3>
 								</div>	
 								<div class="ui red segment">
-									<p><h3>Отсутствие закладок;</h3></p>
+									<h3>Отсутствие закладок;</h3>
 								</div>	
 									
 							</div>
@@ -253,48 +293,48 @@
 							<h2 class="ui center aligned header" id="target_05">Safari</h2>
 							<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\safari.png">
-									<p><h3>Браузер, разработанный и представленный компанией Apple в 2003 году. Работает на движке WebKit. Есть версии и для ОС Windows.</h3></p>
-									<p><h3><br><br></h3></p>
+									<img class="ui small left floated image" src="images/safari.png" alt="Изб5">
+									<h3>Браузер, разработанный и представленный компанией Apple в 2003 году. Работает на движке WebKit. Есть версии и для ОС Windows.</h3>
+									<br><br><br>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Высокая скорость загрузки страниц;</h3></p>
+									<h3>Высокая скорость загрузки страниц;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Высокий уровень безопасности;</h3></p>
+									<h3>Высокий уровень безопасности;</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Блокировка всплывающих окон;</h3></p>
+									<h3>Блокировка всплывающих окон;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Наличие антифишингового фильтра;</h3></p>
+									<h3>Наличие антифишингового фильтра;</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Возможность синхронизации адресных книг ОС Mac и Windows;</h3></p>
+									<h3>Возможность синхронизации адресных книг ОС Mac и Windows;</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Доступен режим частного просмотра (инкогнито), то есть не сохраняется история посещений, 
-									пароли, и не принимаются куки;</h3></p>
+									<h3>Доступен режим частного просмотра (инкогнито), то есть не сохраняется история посещений, 
+									пароли, и не принимаются куки;</h3>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Поддерживает стандарты CSS3 и HTML5 и распознает нестандартные шрифты;</h3></p>
+									<h3>Поддерживает стандарты CSS3 и HTML5 и распознает нестандартные шрифты;</h3>
 								</div>
 								
 								<div class="ui red segment">
-									<p><h3>Высокие требования к мощности компьютера;</h3></p>
+									<h3>Высокие требования к мощности компьютера;</h3>
 								</div>
 								<div class="ui red segment">
-									<p><h3>Браузер недоступен пользователям, использующим GPRS-соединение;</h3></p>
+									<h3>Браузер недоступен пользователям, использующим GPRS-соединение;</h3>
 								</div>	
 								<div class="ui red segment">
-									<p><h3>Небольшое количество плагинов;</h3></p>
+									<h3>Небольшое количество плагинов;</h3>
 								</div>	
 									
 							</div>
@@ -320,7 +360,7 @@
 							</div>
 						
 						
-							<div class="ui bottom attached" style="background: #00CCFF">
+							<div class="ui   footer segment" style="background: #00CCFF">
 								<div class="ui stackable container">
 									<div class="ui left aligned header"><p> Все права защищены </p></div>
 								</div>
@@ -331,12 +371,12 @@
 				</div>				
 			</div>
 		</div>
-		<button class="ui blue button"id="toggle-menu">Меню</button>
+		<button class="ui blue button" id="toggle-menu">Меню</button>
 		
 		<div class="dock-menu" id="dock-menu">
 			<div class="ui vertical menu" style="top: 0; left: 0;  height: 100%; background-color: #3185ce; color: #fff; background: #3185ce;">
 				<div class="item">
-					<img class="ui mini image" src="images\menu.png">
+					<img class="ui mini image" src="images/menu.png" alt="Изб6">
 				</div>
 				<div class="ui accordion" style="background: #00CCFF;">
 					<div class="title">
@@ -357,40 +397,18 @@
 					</div>
 					<div class="content">
 						<a class="item" style="background: #00CCFF;" href="#target">Internet Explorer (IE)</a>
-						<a class="item" style="background: #00CCFF;"href="#target_02">Google Chrome</a>
+						<a class="item" style="background: #00CCFF;" href="#target_02">Google Chrome</a>
 						<a class="item" style="background: #00CCFF;" href="#target_03">Mozilla Firefox</a>
-						<a class="item" style="background: #00CCFF;"href="#target_04">Opera</a>
-						<a class="item" style="background: #00CCFF;"href="#target_05">Safari</a>
+						<a class="item" style="background: #00CCFF;" href="#target_04">Opera</a>
+						<a class="item" style="background: #00CCFF;" href="#target_05">Safari</a>
 					</div>
 				</div>			
 			</div>
 		</div>	
 			
 	</div>
-</body>
-	<style>
-		.ui.blue.button {
-		  position: fixed;
-		  top: 20px;
-		  left: 20px;
-		  border: none;
-		}
-
-		.dock-menu {
-		  position: fixed;
-		  top: 0;
-		  left: -300px;
-		  width: 150px;
-		  height: 100%;
-		  z-index: 100;
-		  transition: left 0.3s ease-in-out;
-		}
-		.dock-menu.show {
-		  left: 0;
-		}
-	</style>
 	
-	<script>
+		<script>
 		const toggleMenuButton = document.getElementById('toggle-menu');
 		const dockMenu = document.getElementById('dock-menu');
 
@@ -436,25 +454,11 @@
 		
 	</script>	
 
-	<style>
-	  .last.container {
-		margin-bottom: 300px !important;
-	  }
-	  h1.ui.center.header {
-		margin-top: 3em;
-	  }
-	  h2.ui.center.header {
-		margin: 4em 0em 2em;
-	  }
-	  h3.ui.center.header {
-		margin-top: 2em;
-		padding: 2em 0em;
-	  }
-	</style>
-
 	<script>
 		$('.ui.accordion')
 		.accordion()
 		;
 	</script>
+	
+</body>
 </html>

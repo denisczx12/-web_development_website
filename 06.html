@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<!-- Standard Meta -->
 	<meta charset="utf-8">
@@ -8,16 +9,55 @@
 	<!-- Site Properties -->
 	<title>Web-разработка- Semantic UI</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.css">
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.js"></script>
+	
+	<style>
+	    body {
+			background: #ccd9ff;
+		}
+		.ui.blue.button {
+		  position: fixed;
+		  top: 20px;
+		  left: 20px;
+		  border: none;
+		}
+
+		.dock-menu {
+		  position: fixed;
+		  top: 0;
+		  left: -300px;
+		  width: 150px;
+		  height: 100%;
+		  z-index: 100;
+		  transition: left 0.3s ease-in-out;
+		}
+		.dock-menu.show {
+		  left: 0;
+		}
+		
+		.last.container {
+			margin-bottom: 300px !important;
+		}
+		h1.ui.center.header {
+			margin-top: 3em;
+		}
+		h2.ui.center.header {
+			margin: 4em 0em 2em;
+		}
+		h3.ui.center.header {
+			margin-top: 2em;
+			padding: 2em 0em;
+		}
+	</style>
+	
 </head>
-<body style="background:  #ccd9ff">
+<body>
 	<div class="ui horizontal segments">
 		<div class="two wide column">
 			<div class="ui left fixed vertical menu" style="background: #3185ce; z-index: 9999;">
 				<div class="item">
-					<img class="ui mini image" src="images\menu.png">
+					<img class="ui mini image" src="images/menu.png" alt="Меню">
 				</div>
 				<div class="ui accordion" style="background: #00CCFF;">
 					<div class="title">
@@ -37,8 +77,8 @@
 					</div>
 					<div class="content">
 						<a class="item" style="background: #00CCFF;" href="#target">Firefox</a>
-						<a class="item" style="background: #00CCFF;"href="#target_02">Sizzy</a>
-						<a class="item" style="background: #00CCFF;"href="#target_03">Polypane</a>
+						<a class="item" style="background: #00CCFF;" href="#target_02">Sizzy</a>
+						<a class="item" style="background: #00CCFF;" href="#target_03">Polypane</a>
 					</div>
 				</div>
 			</div>		
@@ -57,51 +97,51 @@
 			</div>
 			<div class="ui justified container Mobile">			
 				<h2 class="ui center aligned header">Топ 3 веб-браузеров для разработки</h2>
-				<img class="ui centered Big  rounded image" src="images\2168f0000320d4397ef992e39cac50a7.webp" style="width: 97%;">
+				<img class="ui centered Big  rounded image" src="images/2168f0000320d4397ef992e39cac50a7.webp" style="width: 97%;" alt="Изб">
 				<div class="ui stackable one column vertically divided grid container">
 					<div class="row">
 						<div class="column">
 						<div class="ui segments">
 								<div class="ui segment">
 								<h2 class="ui center aligned header" style="margin: 0em 0em 1em;" id="target">Firefox</h2>
-									<img class="ui Small left floated image" src="images\firefox_02.png" >
-									<p><h3>Создатели одного из самых популярных браузеров предлагают версию, созданную специально для разработчиков – 
-									Firefox Developer Edition. Вот список функций, которые отличают её от версии для пользователей: </h3></p>
-									<p><h3> <br></h3></p>
+									<img class="ui small left floated image" src="images/firefox_02.png" alt="Изб1">
+									<h3>Создатели одного из самых популярных браузеров предлагают версию, созданную специально для разработчиков – 
+									Firefox Developer Edition. Вот список функций, которые отличают её от версии для пользователей: </h3>
+									<br><br><br>
 								</div>
 								<div class="ui blue segment">
-									<p><h3>Web IDE для разработки, развертывания и отладки веб-приложений.</h3></p>
+									<h3>Web IDE для разработки, развертывания и отладки веб-приложений.</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Функция просмотра сайта на экранах разных размеров (mobile, tablet, laptop).</h3></p>
+									<h3>Функция просмотра сайта на экранах разных размеров (mobile, tablet, laptop).</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Возможность определения неактивного CSS на странице.</h3></p>
+									<h3>Возможность определения неактивного CSS на странице.</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Отличные DevTools для отладки и проверки кода.</h3></p>
+									<h3>Отличные DevTools для отладки и проверки кода.</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Упрощенная система работы с сетками CSS с помощью визуализации.</h3></p>
+									<h3>Упрощенная система работы с сетками CSS с помощью визуализации.</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Доступ к используемым на веб-странице шрифтам.</h3></p>
+									<h3>Доступ к используемым на веб-странице шрифтам.</h3>
 								</div>
 								<div class="ui blue segment">
-									<p><h3>Web Audio Editor – функция для проверки узлов веб-аудио.</h3></p>
+									<h3>Web Audio Editor – функция для проверки узлов веб-аудио.</h3>
 								</div>
 								<div class="ui blue segment">
-									<p><h3>Мониторинг сети – просмотр всех сетевых запросов, оценка времени отклика 
-									и скорости подключения.</h3></p>
+									<h3>Мониторинг сети – просмотр всех сетевых запросов, оценка времени отклика 
+									и скорости подключения.</h3>
 								</div>
 								<div class="ui blue segment">
-									<p><h3>Также в этой версии кнопки инструментов веб-разработки вынесены прямо на панель управления. 
-									Firefox Developer Edition доступен для Windows, Linux и OS X.</h3></p>
+									<h3>Также в этой версии кнопки инструментов веб-разработки вынесены прямо на панель управления. 
+									Firefox Developer Edition доступен для Windows, Linux и OS X.</h3>
 								</div>								
 							</div>
 						</div>
@@ -112,36 +152,36 @@
 						<h2 class="ui center aligned header" id="target_02">Sizzy</h2>
 							<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\sizzy.png">
-									<p><h3>Sizzy — это браузер с отличной функциональностью, предназначенный для ускорения рабочего процесса разработки. 
+									<img class="ui small left floated image" src="images/sizzy.png" alt="Изб2">
+									<h3>Sizzy — это браузер с отличной функциональностью, предназначенный для ускорения рабочего процесса разработки. 
 									Создатели этого инструмента пообещали сделать его более продуктивным, 
-									и им это удалось.</h3></p>
-									<p><h3> Список предлагаемых Sizzy функций довольно обширен, но некоторые из них заслуживают особого внимания:</h3></p>
+									и им это удалось.</h3>
+									<h3> Список предлагаемых Sizzy функций довольно обширен, но некоторые из них заслуживают особого внимания:</h3>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Моделирование и возможность сделать скриншот веб-страницы на нескольких устройствах одновременно.</h3></p>
+									<h3>Моделирование и возможность сделать скриншот веб-страницы на нескольких устройствах одновременно.</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Анализ элемента на всех устройствах с помощью функции Universal Inspect Element.</h3></p>
+									<h3>Анализ элемента на всех устройствах с помощью функции Universal Inspect Element.</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Проверка скорости загрузки веб-сайта в различных условиях.</h3></p>
+									<h3>Проверка скорости загрузки веб-сайта в различных условиях.</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Функция Spotlight для работы с сайтом с помощью клавиатуры.</h3></p>
+									<h3>Функция Spotlight для работы с сайтом с помощью клавиатуры.</h3>
 								</div>	
 							
 								<div class="ui blue segment">
-									<p><h3>Менеджер сессий для переключения между пользователями.</h3></p>
+									<h3>Менеджер сессий для переключения между пользователями.</h3>
 								</div>
 								
 								<div class="ui red segment">
-									<p><h3>Данный браузер действительно создан для разработчиков, но доступен только на условиях ежемесячной 
-										или ежегодной платной подписки с двухнедельным бесплатным периодом.</h3></p>
+									<h3>Данный браузер действительно создан для разработчиков, но доступен только на условиях ежемесячной 
+										или ежегодной платной подписки с двухнедельным бесплатным периодом.</h3>
 								</div>	
 									
 							</div>
@@ -153,30 +193,30 @@
 							<h2 class="ui center aligned header" id="target_03">Polypane</h2>
 							<div class="ui segments">
 								<div class="ui segment">
-									<img class="ui small left floated image" src="images\polypane.jfif">
-									<p><h3>Polypane предлагает достаточное количество функций как для обычных пользователей так  и разработчиков. 
-									При этом в данном браузере реализованы важные инструменты для создателей сайтов:</h3></p>
-									<p><h3><br></h3></p>
+									<img class="ui small left floated image" src="images/polypane.jfif" alt="Изб5">
+									<h3>Polypane предлагает достаточное количество функций как для обычных пользователей так  и разработчиков. 
+									При этом в данном браузере реализованы важные инструменты для создателей сайтов:</h3>
+									<br><br><br>
 								</div>
 								
 								<div class="ui blue segment">
-									<p><h3>Поддержка нескольких окон просмотра для сайтов на различных устройствах, от мобильных до мониторов с разрешением 5K.</h3></p>
+									<h3>Поддержка нескольких окон просмотра для сайтов на различных устройствах, от мобильных до мониторов с разрешением 5K.</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Имеет восемьдесят тестов на доступность.</h3></p>
+									<h3>Имеет восемьдесят тестов на доступность.</h3>
 								</div>
 							
 								<div class="ui blue segment">
-									<p><h3>Интеграция с популярными системами управления контентом (CMS).</h3></p>
+									<h3>Интеграция с популярными системами управления контентом (CMS).</h3>
 								</div>
 
 								<div class="ui blue segment">
-									<p><h3>Поддержка расширений для фреймворков React, Angular, Vue и Svelte.</h3></p>
+									<h3>Поддержка расширений для фреймворков React, Angular, Vue и Svelte.</h3>
 								</div>									
 
 								<div class="ui red segment">
-									<p><h3> Браузер доступен для бесплатного тестирования, но для использования расширенных функций в долгосрочной перспективе потребуется подписка.</h3></p>
+									<h3> Браузер доступен для бесплатного тестирования, но для использования расширенных функций в долгосрочной перспективе потребуется подписка.</h3>
 								</div>
 									
 							</div>
@@ -202,7 +242,7 @@
 								<a class="ui primary icon button" data-tooltip="SEO-плагины" href="08.html">Five</a>
 							</div>
 							
-							<div class="ui bottom attached" style="background: #00CCFF">
+							<div class="ui   footer segment" style="background: #00CCFF">
 								<div class="ui stackable container">
 									<div class="ui left aligned header"><p> Все права защищены </p></div>
 								</div>
@@ -214,12 +254,12 @@
 			</div>
 		</div>
 		
-		<button class="ui blue button"id="toggle-menu">Меню</button>
+		<button class="ui blue button" id="toggle-menu">Меню</button>
 		
 		<div class="dock-menu" id="dock-menu">
 			<div class="ui vertical menu" style="top: 0; left: 0;  height: 100%; background-color: #3185ce; color: #fff; background: #3185ce;">
 				<div class="item">
-					<img class="ui mini image" src="images\menu.png">
+					<img class="ui mini image" src="images/menu.png" alt="Изб1">
 				</div>
 				<div class="ui accordion" style="background: #00CCFF;">
 					<div class="title">
@@ -240,37 +280,15 @@
 					</div>
 					<div class="content">
 						<a class="item" style="background: #00CCFF;" href="#target">Firefox</a>
-						<a class="item" style="background: #00CCFF;"href="#target_02">Sizzy</a>
-						<a class="item" style="background: #00CCFF;"href="#target_03">Polypane</a>
+						<a class="item" style="background: #00CCFF;" href="#target_02">Sizzy</a>
+						<a class="item" style="background: #00CCFF;" href="#target_03">Polypane</a>
 					</div>
 				</div>			
 			</div>
 		</div>	
 		
-	</div>	
-</body>
-	<style>
-		.ui.blue.button {
-		  position: fixed;
-		  top: 20px;
-		  left: 20px;
-		  border: none;
-		}
+	</div>
 
-		.dock-menu {
-		  position: fixed;
-		  top: 0;
-		  left: -300px;
-		  width: 150px;
-		  height: 100%;
-		  z-index: 100;
-		  transition: left 0.3s ease-in-out;
-		}
-		.dock-menu.show {
-		  left: 0;
-		}
-	</style>
-	
 	<script>
 		const toggleMenuButton = document.getElementById('toggle-menu');
 		const dockMenu = document.getElementById('dock-menu');
@@ -317,25 +335,11 @@
 		
 	</script>	
 
-	<style>
-	  .last.container {
-		margin-bottom: 300px !important;
-	  }
-	  h1.ui.center.header {
-		margin-top: 3em;
-	  }
-	  h2.ui.center.header {
-		margin: 4em 0em 2em;
-	  }
-	  h3.ui.center.header {
-		margin-top: 2em;
-		padding: 2em 0em;
-	  }
-	</style>
-
 	<script>
 		$('.ui.accordion')
 		.accordion()
 		;
 	</script>
+	
+</body>
 </html>

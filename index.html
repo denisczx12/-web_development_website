@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
 	<!-- Standard Meta -->
 	<meta charset="utf-8">
@@ -8,16 +9,55 @@
 	<!-- Site Properties -->
 	<title>Web-разработка- Semantic UI</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.css">
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.js"></script>
+	
+	<style>
+	    body {
+			background: #ccd9ff;
+		}
+		.ui.blue.button {
+		  position: fixed;
+		  top: 20px;
+		  left: 20px;
+		  border: none;
+		}
+
+		.dock-menu {
+		  position: fixed;
+		  top: 0;
+		  left: -300px;
+		  width: 150px;
+		  height: 100%;
+		  z-index: 100;
+		  transition: left 0.3s ease-in-out;
+		}
+		.dock-menu.show {
+		  left: 0;
+		}
+		
+		.last.container {
+			margin-bottom: 300px !important;
+		}
+		h1.ui.center.header {
+			margin-top: 3em;
+		}
+		h2.ui.center.header {
+			margin: 4em 0em 2em;
+		}
+		h3.ui.center.header {
+			margin-top: 2em;
+			padding: 2em 0em;
+		}
+	</style>
+
 </head>
-<body style="background:  #ccd9ff">
+<body>
 	<div class="ui horizontal segments">
 		<div class="two wide column">
 			<div class="ui left fixed vertical menu" style="background: #3185ce; z-index: 9999;">
 					<div class="item">
-						<img class="ui mini image" src="images\menu.png">
+						<img class="ui mini image" src="images/menu.png" alt="Меню">
 					</div>
 					<div class="ui accordion" style="background: #00CCFF;">
 						<div class="title">
@@ -37,8 +77,8 @@
 						</div>
 						<div class="content">
 							<a class="item" style="background: #00CCFF;" href="#target">Браузеры и плагины для веб-разработки</a>
-							<a class="item" style="background: #00CCFF;"href="#target_02">Виды веб-разработчиков</a>
-							<a class="item" style="background: #00CCFF;"href="#target_03">Что такое браузер ?</a>
+							<a class="item" style="background: #00CCFF;" href="#target_02">Виды веб-разработчиков</a>
+							<a class="item" style="background: #00CCFF;" href="#target_03">Что такое браузер ?</a>
 						</div>
 					</div>
 			</div>		
@@ -58,36 +98,36 @@
 			</div>
 			
 			<div class="ui justified container Mobile">
-				<h2 class="ui center aligned header"id="target">Браузеры и плагины для веб-разработки</h2>
+				<h2 class="ui center aligned header" id="target">Браузеры и плагины для веб-разработки</h2>
 				<div class="ui segments">
 					<div class="ui segment">
-						<h3><p>Веб-браузеры и плагины для веб-разработки
+						<h3>Веб-браузеры и плагины для веб-разработки
 						Начнем с основ: что такое веб-разработка и что такое браузер. Также рассмотрим, чем занимаются специалисты в этой области.
 						Веб-разработчик — это профессионал, который создает и поддерживает сайты и приложения. Эти специалисты могут работать как над внешним видом веб-сайта, так и над его внутренней, программной частью.
-						</p></h3>
+						</h3>
 					</div>
-					<div class="ui  blue segment"><h3><p>Web-разработка включает в себя несколько ключевых аспектов:</p></h3></div>
-					<div class="ui  blue segment"><h3><p>1.HTML (HyperText Markup Language) — язык разметки, который используется для создания структуры веб-страниц.</p></h3></div>
-					<div class="ui  blue segment"><h3><p>2.CSS (Cascading Style Sheets) — язык стилей, который используется для оформления веб-страниц.</p></h3></div>
-					<div class="ui  blue segment"><h3><p>3.JavaScript — язык программирования, который используется для создания интерактивных элементов на веб-страницах.</p></h3></div>
-					<div class="ui  blue segment"><h3><p>4.Фреймворки и библиотеки — такие как React, Angular и Vue.js, которые упрощают процесс разработки и ускоряют создание веб-приложений.</p></h3></div>
+					<div class="ui  blue segment"><h3>Web-разработка включает в себя несколько ключевых аспектов:</h3></div>
+					<div class="ui  blue segment"><h3>1.HTML (HyperText Markup Language) — язык разметки, который используется для создания структуры веб-страниц.</h3></div>
+					<div class="ui  blue segment"><h3>2.CSS (Cascading Style Sheets) — язык стилей, который используется для оформления веб-страниц.</h3></div>
+					<div class="ui  blue segment"><h3>3.JavaScript — язык программирования, который используется для создания интерактивных элементов на веб-страницах.</h3></div>
+					<div class="ui  blue segment"><h3>4.Фреймворки и библиотеки — такие как React, Angular и Vue.js, которые упрощают процесс разработки и ускоряют создание веб-приложений.</h3></div>
 				</div>
 				
 				<div class="ui stackable one column vertically divided grid container">
 					<div class="row">
 						<div class="column">
 							<div class="ui segment">
-								<h3><p>Специалисты по веб-разработке используют различные инструменты и технологии для создания и поддержки веб-сайтов и приложений. Они могут работать как в командах, так и индивидуально, в зависимости от проекта и его масштаба.
+								<h3>Специалисты по веб-разработке используют различные инструменты и технологии для создания и поддержки веб-сайтов и приложений. Они могут работать как в командах, так и индивидуально, в зависимости от проекта и его масштаба.
 									Плагины для веб-разработки — это дополнительные программы и расширения, которые добавляют новые функции и возможности к браузерам. Они могут использоваться для отладки кода, улучшения производительности, автоматизации задач и многого другого.
 									В заключение, веб-разработка — это динамичная и постоянно развивающаяся область, которая требует от специалистов постоянного обучения и обновления знаний. Браузеры и плагины являются важными инструментами в арсенале веб-разработчика, помогая ему создавать качественные и функциональные веб-сайты и приложения.
-								</p></h3>
+								</h3>
 							</div>
 						</div>
 					</div>
 					
 					<div class="row">
 						<div class="column">
-							<h2 class="ui center aligned header"id="target_02">Виды веб-разработчиков</h2>
+							<h2 class="ui center aligned header" id="target_02">Виды веб-разработчиков</h2>
 							<div class="ui segment">
 							  <h3>
 								В современном мире веб-разработка является одной из самых востребованных профессий. 
@@ -128,7 +168,7 @@
 					
 					<div class="row">
 						<div class="column">
-							<h2 class="ui center aligned header"id="target_03">Что такое браузер?</h2>
+							<h2 class="ui center aligned header" id="target_03">Что такое браузер?</h2>
 							<div class="ui segment">
 								<h3>Браузер – это специальная программа, которая позволяет искать информацию в интернете, 
 								  просматривать сайты, скачивать файлы любого 
@@ -144,7 +184,7 @@
 									<a class="ui  primary icon button" href="https://blog.skillfactory.ru/kto-takoj-veb-razrabotchik-i-chem-on-zanimaetsya/" data-tooltip="Кто такой веб-разработчик">skillfactory</a>
 									<a class="ui  primary icon button " data-tooltip="Браузер определение" href="https://sendpulse.com/ru/support/glossary/browser">sendpulse</a>
 							</div>
-							<div class="ui bottom attached" style="background: #00CCFF">
+							<div class="ui   footer segment" style="background: #00CCFF">
 								<div class="ui stackable container">
 									<div class="ui left aligned header"><p> Все права защищены </p></div>
 								</div>
@@ -153,12 +193,12 @@
 						
 					</div>
 				</div>
-				<button class="ui blue button"id="toggle-menu">Меню</button>
+				<button class="ui blue button" id="toggle-menu">Меню</button>
 
 				<div class="dock-menu" id="dock-menu">
 					<div class="ui vertical menu" style="top: 0; left: 0;  height: 100%; background-color: #3185ce; color: #fff; background: #3185ce;">
 						<div class="item">
-							<img class="ui mini image" src="images\menu.png">
+							<img class="ui mini image" src="images/menu.png" alt="Меню">
 						</div>
 						<div class="ui accordion" style="background: #00CCFF;">
 							<div class="title">
@@ -179,8 +219,8 @@
 							</div>
 							<div class="content">
 								<a class="item" style="background: #00CCFF;" href="#target">Браузеры и плагины для веб-разработки</a>
-								<a class="item" style="background: #00CCFF;"href="#target_02">Виды веб-разработчиков</a>
-								<a class="item" style="background: #00CCFF;"href="#target_03">Что такое браузер ?</a>
+								<a class="item" style="background: #00CCFF;" href="#target_02">Виды веб-разработчиков</a>
+								<a class="item" style="background: #00CCFF;" href="#target_03">Что такое браузер?</a>
 							</div>
 						</div>	
 					
@@ -190,30 +230,8 @@
 			</div>
 	
 		</div>
-	</div>	
-</body>
-	<style>
-		.ui.blue.button {
-		  position: fixed;
-		  top: 20px;
-		  left: 20px;
-		  border: none;
-		}
+	</div>
 
-		.dock-menu {
-		  position: fixed;
-		  top: 0;
-		  left: -300px;
-		  width: 150px;
-		  height: 100%;
-		  z-index: 100;
-		  transition: left 0.3s ease-in-out;
-		}
-		.dock-menu.show {
-		  left: 0;
-		}
-	</style>
-	
 	<script>
 		const toggleMenuButton = document.getElementById('toggle-menu');
 		const dockMenu = document.getElementById('dock-menu');
@@ -260,25 +278,17 @@
 		
 	</script>	
 
-	<style>
-	  .last.container {
-		margin-bottom: 300px !important;
-	  }
-	  h1.ui.center.header {
-		margin-top: 3em;
-	  }
-	  h2.ui.center.header {
-		margin: 4em 0em 2em;
-	  }
-	  h3.ui.center.header {
-		margin-top: 2em;
-		padding: 2em 0em;
-	  }
-	</style>
+
 
 	<script>
 		$('.ui.accordion')
 		.accordion()
 		;
 	</script>
+
+	
+</body>
 </html>
+
+
+
